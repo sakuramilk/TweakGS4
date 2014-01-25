@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2011-2012 sakuramilk <c.sakuramilk@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tweakGS4="http://schemas.android.com/apk/res/net.sakuramilk.TweakGS4"
+    android:key="parent"
+    android:title="@string/app_long_name">
+
+    <!-- General -->
+    <PreferenceScreen
+        android:title="@string/general_title"
+        android:icon="@drawable/ic_settings_applications">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="net.sakuramilk.TweakGS4"
+            android:targetClass="net.sakuramilk.TweakGS4.General.GeneralPreferenceActivity" />
+    </PreferenceScreen>
+
+    <!-- RomManager -->
+    <PreferenceScreen
+        android:title="@string/rom_manager_title"
+        android:icon="@drawable/ic_settings_cmdevice"
+        android:enabled="false">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="net.sakuramilk.TweakGS4"
+            android:targetClass="net.sakuramilk.TweakGS4.RomManager.RomManagerPreferenceActivity" />
+    </PreferenceScreen>
+
+    <!-- CpuControl -->
+    <PreferenceScreen
+        android:title="@string/cpu_control_title"
+        android:icon="@drawable/ic_settings_cpu"
+        android:enabled="false">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="net.sakuramilk.TweakGS4"
+            android:targetClass="net.sakuramilk.TweakGS4.CpuControl.CpuControlPreferenceActivity" />
+    </PreferenceScreen>
+
+    <!-- Sound and Vibrator -->
+    <PreferenceScreen
+        android:title="@string/sound_and_vib_title"
+        android:icon="@drawable/ic_settings_sound"
+        android:enabled="false">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="net.sakuramilk.TweakGS4"
+            android:targetClass="net.sakuramilk.TweakGS4.SoundAndVib.SoundAndVibPreferenceActivity" />
+    </PreferenceScreen>
+
+    <!-- Display -->
+    <PreferenceScreen
+        android:title="@string/display_title"
+        android:icon="@drawable/ic_settings_display"
+        android:enabled="false">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="net.sakuramilk.TweakGS4"
+            android:targetClass="net.sakuramilk.TweakGS4.Display.DisplayPreferenceActivity" />
+    </PreferenceScreen>
+
+    <!-- Notification -->
+    <!--
+    <PreferenceScreen
+        android:title="@string/notification_title"
+        android:icon="@drawable/ic_settings_notification">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="net.sakuramilk.TweakGS4"
+            android:targetClass="net.sakuramilk.TweakGS4.Notification.NotificationPreferenceActivity" />
+    </PreferenceScreen>
+    -->
+
+    <!-- Dock -->
+    <PreferenceScreen
+        android:title="@string/dock_title"
+        android:icon="@drawable/ic_settings_dock"
+        android:enabled="false">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="net.sakuramilk.TweakGS4"
+            android:targetClass="net.sakuramilk.TweakGS4.Dock.DockPreferenceActivity" />
+    </PreferenceScreen>
+
+    <!-- About -->
+    <PreferenceScreen
+        android:title="@string/about_title"
+        android:icon="@drawable/ic_settings_about">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="net.sakuramilk.TweakGS4"
+            android:targetClass="net.sakuramilk.TweakGS4.About.AboutPreferenceActivity" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

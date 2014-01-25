@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2011-2012 sakuramilk <c.sakuramilk@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+
+    <!-- Common -->
+    <string name="current_value">設定値:</string>
+    <string name="saved_value">保存値:</string>
+    <string name="go_back">戻る</string>
+    <string name="internal_sdcard">内部SDカード</string>
+    <string name="external_sdcard">外部SDカード</string>
+    <string name="path">パス</string>
+    <string name="directory">ディレクトリ</string>
+    <string name="file">ファイル</string>
+    <string name="set_on_boot">起動時に設定</string>
+    <string name="not_support">サポートされていません</string>
+    <string name="none">なし</string>
+    <string name="option">Option</string>
+    <string name="frequency">周波数</string>
+    <string name="voltage">電圧</string>
+    <string name="apply">適用</string>
+    <string name="version">バージョン</string>
+    <string name="back">戻る</string>
+    <string name="next">次へ</string>
+    <string name="complete">完了</string>
+    <string name="create">作成</string>
+    <string name="label">ラベル</string>
+    <string name="up_threshold">アップしきい値</string>
+    <string name="down_threshold">ダウンしきい値</string>
+    <string name="not_rooted_message">使用中のROMはrootedではありません</string>
+    <string name="temp_unrooted_message">現在一時Unroot状態です、root状態に戻してください</string>
+    <string name="felica_key">FeliCaキー</string>
+    <string name="felica_key_current_value">現在のキー</string>
+    <string name="error_get_felica_key">FeliCaキーの取得に失敗しました</string>
+    <string name="success_get_felica_key">FeliCaキーの取得に成功しました</string>
+    
+
+    <!-- ROM Manager -->
+    <string name="rom_manager_title">ROMマネージャ</string>
+    <string name="dual_boot_category">デュアルブート</string>
+    <string name="boot_rom">ブートROM</string>
+    <string name="reboot_category">再起動</string>
+    <string name="reboot">再起動</string>
+    <string name="reboot_summary">OSを再起動します</string>
+    <string name="recovery">リカバリ</string>
+    <string name="recovery_summary">再起動してリカバリモードにします</string>
+    <string name="download">ダウンロード</string>
+    <string name="download_summary">再起動してダウンロードモードにします</string>
+    <string name="nandroid_category">バックアップ/リストア</string>
+    <string name="backup">バックアップ</string>
+    <string name="backup_summary">現在のROMをバックアップします</string>
+    <string name="restore">リストア</string>
+    <string name="restore_summary">バックアップからリストアします</string>
+    <string name="manage">管理</string>
+    <string name="manage_summary">バックアップを管理します</string>
+    <string name="flash_category">フラッシュ</string>
+    <string name="install_zip">zipインストール</string>
+    <string name="install_zip_summary">zipファイルをインストールします</string>
+    <string name="backup_name">バックアップ名</string>
+    <string name="select_zip_title">zipファイルを選択</string>
+    <string name="select_backup_title">バックアップを選択</string>
+    <string name="do_install_zip">zipファイルをinstallします</string>
+    <string name="do_restore">リストアします</string>
+    <string name="backup_manage_rename">名前を変更</string>
+    <string name="backup_manage_rename_message">新しいバックアップ名を入力</string>
+    <string name="backup_manage_delete">削除</string>
+    <string name="backup_manage_delete_confirm">バックアップを削除しますか?</string>
+    <string name="special_category">拡張機能</string>
+    <string name="partition_backup_title">重要パーティションのバックアップ</string>
+    <string name="partition_backup_summary">CWMではバックアップされない重要なパーティションをバックアップします</string>
+    <string name="backup_completed">バックアップが完了しました、PCにコピーして大切に保管してください</string>
+    <string name="time_adjust_title">時間調整</string>
+    <string name="time_adjust_summary">リカバリモードでの時間を調整します</string>
+    <string name="temp_unroot_title">一時的なUn-root</string>
+    <string name="temp_unroot_summary_rooted">現在root状態です</string>
+    <string name="temp_unroot_summary_unrooted">現在一時Un-root状態です</string>
+    <string name="partitiion_backup_progress">重要パーティションをバックアップしています</string>
+    
+    <!-- General -->
+    <string name="general_title">全般</string>
+    <string name="low_memory_killer_title">低メモリ時のタスクキル</string>
+    <string name="low_memory_killer_summary">低メモリ時のタスクキル設定を変更します</string>
+    <string name="virtual_memory_title">仮想メモリ</string>
+    <string name="virtual_memory_summary">仮想メモリ設定を変更します</string>
+    <string name="system_property_title">システムプロパティ</string>
+    <string name="system_property_summary">システムプロパティを変更します\n注意: この項目は再起動後に反映されます</string>
+    <string name="io_scheduler_tite">I/Oスケジューラ</string>
+    <string name="gsm_network_tweak_title">3G通信の最適化</string>
+    <string name="gsm_network_tweak_summary_on">3G通信の最適化は有効\n注意: この項目は再起動後に反映されます</string>
+    <string name="gsm_network_tweak_summary_off">3G通信の最適化は無効\n注意: この項目は再起動後に反映されます</string>
+    <string name="replace_key_title">バック/メニューキー入れ替え</string>
+    <string name="replace_key_summary_on">バック/メニューキー入れ替えは有効</string>
+    <string name="replace_key_summary_off">バック/メニューキー入れ替えは無効</string>
+    <string name="sysprop_boot_sound_title">起動時のサウンド</string>
+    <string name="sysprop_boot_sound_summary_on">起動時のサウンドは有効</string>
+    <string name="sysprop_boot_sound_summary_off">起動時のサウンドは無効</string>
+    <string name="sysprop_camera_sound_title">シャッター音の強制</string>
+    <string name="sysprop_camera_sound_summary_on">シャッター音の強制は有効</string>
+    <string name="sysprop_camera_sound_summary_off">シャッター音の強制は無効</string>
+    <string name="sysprop_lcd_density_title">画面密度</string>
+    <string name="sysprop_crt_effect_title">CRTエフェクト</string>
+    <string name="sysprop_crt_effect_summary_on">CRTエフェクトは有効</string>
+    <string name="sysprop_crt_effect_summary_off">CRTエフェクトは無効</string>
+    <string name="sysprop_android_logger_title">logcatの出力</string>
+    <string name="sysprop_android_logger_summary_on">logcatの出力は有効</string>
+    <string name="sysprop_android_logger_summary_off">logcatの出力は無効</string>
+    <string name="sysprop_cifs_title">CIFSサポート</string>
+    <string name="sysprop_cifs_summary_on">CIFSサポートは有効</string>
+    <string name="sysprop_cifs_summary_off">CIFSサポートは無効</string>
+    <string name="sysprop_ntfs_title">NTFSサポート</string>
+    <string name="sysprop_ntfs_summary_on">NTFSサポートは有効</string>
+    <string name="sysprop_ntfs_summary_off">NTFSサポートは無効</string>
+    <string name="sysprop_j4fs_title">J4FSサポート</string>
+    <string name="sysprop_j4fs_summary_on">J4FSサポートは有効</string>
+    <string name="sysprop_j4fs_summary_off">J4FSサポートは無効</string>
+    <string name="sysprop_usb_config_title">USB設定</string>
+    <string name="sysprop_switch_external_title">SDカードマウント先の切り替え</string>
+    <string name="sysprop_switch_external_summary_on">SDカードのマウント先を切り替えます</string>
+    <string name="sysprop_switch_external_summary_off">SDカードのマウント先を切り替えません</string>
+    <string name="sysprop_music_volume_steps_title">音楽ボリュームのステップ</string>
+    <string name="sysprop_show_navigation_bar_title">ナビゲーションバー表示</string>
+    <string name="sysprop_show_navigation_bar_summary_on">ナビゲーションバー表示は有効</string>
+    <string name="sysprop_show_navigation_bar_summary_off">ナビゲーションバー表示は無効</string>
+    <string name="sysprop_scrolling_cache_title">スクロールキャッシュ</string>
+    <string name="sysprop_scrolling_cache_summary_on">スクロールキャッシュは有効</string>
+    <string name="sysprop_scrolling_cache_summary_off">スクロールキャッシュは無効</string>
+    <string name="sysprop_bottom_action_bar_title">アクションバー位置</string>
+    <string name="sysprop_bottom_action_bar_summary_on">アクションバーを下部に設定</string>
+    <string name="sysprop_bottom_action_bar_summary_off">アクションバーを上部に設定</string>
+    <string name="sysprop_bottom_title_bar_title">タイトルバー位置</string>
+    <string name="sysprop_bottom_title_bar_summary_on">タイトルバーを下部に設定</string>
+    <string name="sysprop_bottom_title_bar_summary_off">タイトルバーを上部に設定</string>
+    <string name="sysprop_status_bar_icon_alpha_title">ステータスバーアイコン透過処理</string>
+    <string name="sysprop_status_bar_icon_alpha_summary_on">ステータスバーアイコン透過処理は有効</string>
+    <string name="sysprop_status_bar_icon_alpha_summary_off">ステータスバーアイコン透過処理は無効</string>
+    <string name="sysprop_change_reboot_message">設定が変更されました。今すぐ再起動しますか？</string>
+
+    <!-- Multi boot -->
+    <string name="multi_boot_title">マルチブート設定</string>
+    <string name="multi_boot_rom_select_category">起動ROM選択</string>
+    <string name="multi_boot_rom_select_title">起動ROM</string>
+    <string name="multi_boot_rom_setting">ROM設定</string>
+    <string name="rom_system_category">システム領域</string>
+    <string name="rom_data_category">データ領域</string>
+    <string name="rom_kernel_category">カーネルイメージ</string>
+    <string name="rom_partition">パーティション</string>
+    <string name="rom_image">イメージ</string>
+    <string name="rom_kernel_image">カーネルイメージ</string>
+    <string name="rom_path">パス</string>
+    <string name="menu_add_rom">ROMを追加</string>
+    <string name="multi_boot_wizard_title">マルチブートウィザード</string>
+    <string name="select_img_title">imgファイルを選択</string>
+    <string name="select_dir_title">ディレクトリを選択</string>
+    <string name="rom_label_title">ROMラベル</string>
+    <string name="rom_label_message">ROMのラベルを入力してください</string>
+
+    <!-- CPU Control -->
+    <string name="cpu_control_title">CPUコントロール</string>
+    <string name="cpu_info_category">SoC情報</string>
+    <string name="cpu_governor_category">ガバナ</string>
+    <string name="cpu_governor_select">ガバナ選択</string>
+    <string name="cpu_governor_setting">ガバナ設定</string>
+    <string name="cpu_freq_category">周波数</string>
+    <string name="cpu_max_freq">最大</string>
+    <string name="cpu_min_freq">最小</string>
+    <string name="cpu_max_suspend_freq">最大 (サスペンド中)</string>
+    <string name="cpu_min_suspend_freq">最小 (サスペンド中)</string>
+    <string name="cpu_voltage_category">電圧</string>
+    <string name="cpu_voltage_title">電圧調整</string>
+    <string name="cpu_asv_group_title">ASVグループ</string>
+    <string name="cpu_voltage_asv_group_category_title">電圧テーブル</string>
+    <string name="cpu_voltage_value_category_title">電圧設定</string>
+    <string name="cpu_asv_group_change_message">ASVグループを変更すると現在の電圧設定がリセットされます、設定を変更してもよろしいですか？</string>
+    <string name="cpu_info_copy">SoC情報をクリップボードにコピーしますか？</string>
+
+    <!-- GPU Control -->
+    <string name="gpu_control_title">GPUコントロール</string>
+    <string name="gpu_high_state_category">高パフォーマンス</string>
+    <string name="gpu_low_state_category">低パフォーマンス</string>
+    <string name="gpu_freq_category">Governor</string>
+
+    <!-- Display -->
+    <string name="display_title">画面設定</string>
+    <string name="mdnie_category">mDNie</string>
+    <string name="mdnie_function">mDNie機能</string>
+    <string name="mdnie_function_on">mDNie機能は有効</string>
+    <string name="mdnie_function_off">mDNie機能は無効</string>
+    <string name="mdnie_ctrl_enable">mDNie調整</string>
+    <string name="mdnie_ctrl_enable_on">mDNie調整は有効</string>
+    <string name="mdnie_ctrl_enable_off">mDNie調整は無効</string>
+    <string name="mdnie_ctrl_red">赤</string>
+    <string name="mdnie_ctrl_green">緑</string>
+    <string name="mdnie_ctrl_blue">青</string>
+    <string name="mdnie_ctrl_sharpness">シャープネス</string>
+
+    <!-- Sound and Vibration -->
+    <string name="sound_and_vib_title">サウンド/バイブ設定</string>
+    <string name="sound_category">サウンド</string>
+    <string name="hw_volumes">HWボリューム</string>
+    <string name="sound_play_freq_lock_title">CPU下限ロック</string>
+    <string name="sound_play_freq_lock_summary_on">音楽再生中のCPU下限ロックは有効\n注意: 次の再生から適用されます</string>
+    <string name="sound_play_freq_lock_summary_off">音楽再生中のCPU下限ロックは無効\n注意: 次の再生から適用されます</string>
+    <string name="boot_sound">起動音設定</string>
+    <string name="boot_sound_enabled_title">起動音</string>
+    <string name="boot_sound_enabled_on_summary">起動音は有効です</string>
+    <string name="boot_sound_enabled_off_summary">起動音は無効です</string>
+    <string name="boot_sound_volume_title">起動音のボリューム</string>
+    <string name="boot_sound_note">起動音を有効にするには\'/system/media/\'に\'bootsound.mp3\'を置いてください</string>
+    <string name="vib_category">バイブレータ</string>
+    <string name="vib_normal_level">バイブの強さ（通常時）</string>
+    <string name="vib_incoming_level">バイブの強さ（着信時）</string>
+
+    <!-- Notification -->
+    <string name="notification_title">通知設定</string>
+    <string name="notification_led_category">タッチキー</string>
+    <string name="notification_led_timeout_title">バックライト点灯時間</string>
+    <string name="notification_led_timeout_summary">バックライトの点灯時間を設定します</string>
+    <string name="notification_led_fadeout_title">バックライトのフェードアウト</string>
+    <string name="notification_led_fadeout_summary">バックライトをオフにするときにフェードアウトします</string>
+    <string name="notification_bln_category">LED通知設定</string>
+    <string name="notification_bln_enabled_title">LED通知</string>
+    <string name="notification_bln_enabled_summary">LED通知を有効または無効にします\n※通知中はDeep sleepが無効になります</string>
+    <string name="notification_bln_timeout_title">LED通知の有効時間</string>
+    <string name="notification_bln_effect_title">LED通知の点滅</string>
+    <string name="notification_bln_blink_on_interval_title">点滅のON間隔</string>
+    <string name="notification_bln_blink_off_interval_title">点滅のOFF間隔</string>
+    <string name="notification_bln_on_incoming_title">着信時のBLN</string>
+    <string name="notification_bln_on_incoming_summary_on">着信時にBLNで通知する</string>
+    <string name="notification_bln_on_incoming_summary_off">着信時にBLNで通知しない</string>
+
+    <!-- Dock -->
+    <string name="dock_title">ドック設定</string>
+    <string name="dock_emulate">ドックエミュレート</string>
+    <string name="dock_start">ドック開始</string>
+    <string name="dock_emu_hw">HWエミュレート</string>
+    <string name="dock_emu_sw">SWエミュレート</string>
+    <string name="dock_emu_disable">無効</string>
+    <string name="dock_manual">手動</string>
+    <string name="dock_manual_start">Dockモードを開始します</string>
+    <string name="dock_manual_stop">Dockモードを終了します</string>
+
+    <!-- About -->
+    <string name="about_title">TweakGS4について</string>
+    <string name="about_check_update_title">TweakGS4の更新を確認</string>
+    <string name="about_check_update_summary">これは寄付を受け付けるための有料版です。寄付を行わず無料版を利用することも可能です</string>
+    <string name="all_recommend_title">おすすめ設定</string>
+    <string name="all_recommend_summary">全ての項目におすすめの値を設定します</string>
+    <string name="all_reset_title">初期化</string>
+    <string name="all_reset_summary">全ての項目の値を初期化します</string>
+    <string name="reboot_reflect_comfirm">設定を反映するために今すぐ再起動しますか？</string>
+
+    <!-- Menu -->
+    <string name="menu_reset">初期値に戻す</string>
+    <string name="menu_recommend">おすすめ設定</string>
+
+</resources>

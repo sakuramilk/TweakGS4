@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2011-2012 sakuramilk <c.sakuramilk@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+
+    <!-- Common -->
+    <string name="app_name">TweakGS4</string>
+    <string name="app_long_name">Tweak Galaxy S4</string>
+    <string name="current_value">Current:</string>
+    <string name="saved_value">Saved:</string>
+    <string name="go_back">Go back</string>
+    <string name="internal_sdcard">Internal sdcard</string>
+    <string name="external_sdcard">External sdcard</string>
+    <string name="path">Path</string>
+    <string name="directory">Directory</string>
+    <string name="file">Files</string>
+    <string name="set_on_boot">Set on boot</string>
+    <string name="not_support">Not support</string>
+    <string name="none">none</string>
+    <string name="option">Option</string>
+    <string name="frequency">Frequency</string>
+    <string name="voltage">Voltage</string>
+    <string name="apply">Apply</string>
+    <string name="version">Version</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="complete">Complete</string>
+    <string name="create">Create</string>
+    <string name="label">Label</string>
+    <string name="up_threshold">Up threshold</string>
+    <string name="down_threshold">Down threshold</string>
+    <string name="threashold">Threashold</string>
+    <string name="not_rooted_message">ROM is not rooted in use</string>
+    <string name="temp_unrooted_message">It is now Temp Un-root state. Please return to the root state</string>
+    <string name="felica_key">FeliCa Key</string>
+    <string name="felica_key_current_value">Current key</string>
+    <string name="error_get_felica_key">Failed to get FeliCa key</string>
+    <string name="success_get_felica_key">Succeeded to get FeliCa key</string>
+
+    <!-- ROM Manager -->
+    <string name="rom_manager_title">ROM Manager</string>
+    <string name="dual_boot_category">Dual boot</string>
+    <string name="boot_rom">Boot ROM</string>
+    <string name="reboot_category">Reboot</string>
+    <string name="reboot">Reboot</string>
+    <string name="reboot_summary">Normal Reboot</string>
+    <string name="recovery">Recovery</string>
+    <string name="recovery_summary">Reboot to recovery mode</string>
+    <string name="download">Download</string>
+    <string name="download_summary">Reboot to download mode</string>
+    <string name="nandroid_category">Backup/Restore</string>
+    <string name="backup">Backup</string>
+    <string name="backup_summary">Backup current ROM</string>
+    <string name="restore">Restore</string>
+    <string name="restore_summary">Restore from backup</string>
+    <string name="manage">Manage</string>
+    <string name="manage_summary">Manage backups</string>
+    <string name="flash_category">Flash</string>
+    <string name="install_zip">Install zip</string>
+    <string name="install_zip_summary">Install zip</string>
+    <string name="backup_name">Backup name</string>
+    <string name="select_zip_title">Select zip file</string>
+    <string name="select_backup_title">Select backup</string>
+    <string name="do_install_zip">Install zip file</string>
+    <string name="do_restore">Restore</string>
+    <string name="backup_manage_rename">Rename</string>
+    <string name="backup_manage_rename_message">Enter a new backup name</string>
+    <string name="backup_manage_delete">Delete</string>
+    <string name="backup_manage_delete_confirm">Do you want to delete the backup?</string>
+    <string name="special_category">Special</string>
+    <string name="partition_backup_title">Partition backup</string>
+    <string name="partition_backup_summary">Any pertition backup</string>
+    <string name="backup_completed">Backup completed. Please keep the copy on your PC</string>
+    <string name="time_adjust_title">Adjust time</string>
+    <string name="time_adjust_summary">Adjust time in recvoery mode</string>
+    <string name="temp_unroot_title">Temp Un-root</string>
+    <string name="temp_unroot_summary_rooted">Current state is rooted</string>
+    <string name="temp_unroot_summary_unrooted">Current state is temp un-rooted</string>
+    <string name="partitiion_backup_progress">Running a important pertition backup</string>
+
+    <!-- General -->
+    <string name="general_title">General</string>
+    <string name="low_memory_killer_title">Low memory killer</string>
+    <string name="low_memory_killer_summary">Change low memory task killer settings</string>
+    <string name="virtual_memory_title">Virtual memory</string>
+    <string name="virtual_memory_summary">Change virtual memory settings</string>
+    <string name="system_property_title">System property</string>
+    <string name="system_property_summary">Change system property\nNotice: Take effect after reboot</string>
+    <string name="io_scheduler_tite">I/O scheduler</string>
+    <string name="gsm_network_tweak_title">3G network tweak</string>
+    <string name="gsm_network_tweak_summary_on">3G network tweak enabled\nNotice: Take effect after reboot</string>
+    <string name="gsm_network_tweak_summary_off">3G network tweak disabled\nNotice: Take effect after reboot</string>
+    <string name="replace_key_title">Replace back / menu key</string>
+    <string name="replace_key_summary_on">Replace back / menu key enabled</string>
+    <string name="replace_key_summary_off">Replace back / menu key disabled</string>
+    <string name="sysprop_boot_sound_title">Boot sound</string>
+    <string name="sysprop_boot_sound_summary_on">Boot sound enabled</string>
+    <string name="sysprop_boot_sound_summary_off">Boot sound disabled</string>
+    <string name="sysprop_lcd_density_title">LCD density</string>
+    <string name="sysprop_camera_sound_title">Force shutter sound</string>
+    <string name="sysprop_camera_sound_summary_on">Force shutter sound enabled</string>
+    <string name="sysprop_camera_sound_summary_off">Force shutter sound disabled</string>
+    <string name="sysprop_crt_effect_title">CRT effect</string>
+    <string name="sysprop_crt_effect_summary_on">CRT effect enabled</string>
+    <string name="sysprop_crt_effect_summary_off">CRT effect disabled</string>
+    <string name="sysprop_android_logger_title">Android logger</string>
+    <string name="sysprop_android_logger_summary_on">Android logger enabled</string>
+    <string name="sysprop_android_logger_summary_off">Android logger disabled</string>
+    <string name="sysprop_cifs_title">CIFS support</string>
+    <string name="sysprop_cifs_summary_on">CIFS support enabled</string>
+    <string name="sysprop_cifs_summary_off">CIFS support disabled</string>
+    <string name="sysprop_ntfs_title">NTFS support</string>
+    <string name="sysprop_ntfs_summary_on">NTFS support enabled</string>
+    <string name="sysprop_ntfs_summary_off">NTFS support disabled</string>
+    <string name="sysprop_j4fs_title">J4FS support</string>
+    <string name="sysprop_j4fs_summary_on">J4FS support enabled</string>
+    <string name="sysprop_j4fs_summary_off">J4FS support disabled</string>
+    <string name="sysprop_usb_config_title">USB Config</string>
+    <string name="sysprop_switch_external_title">Switch sdcard mount point</string>
+    <string name="sysprop_switch_external_summary_on">Switch dcard mount point enabled</string>
+    <string name="sysprop_switch_external_summary_off">Switch dcard mount point enabled</string>
+    <string name="sysprop_music_volume_steps_title">Music volume steps</string>
+    <string name="sysprop_show_navigation_bar_title">Show navigation bar</string>
+    <string name="sysprop_show_navigation_bar_summary_on">Show navigation bar enabled</string>
+    <string name="sysprop_show_navigation_bar_summary_off">Show navigation bar disabled</string>
+    <string name="sysprop_scrolling_cache_title">Scrolling cache</string>
+    <string name="sysprop_scrolling_cache_summary_on">Scrolling cache enabled</string>
+    <string name="sysprop_scrolling_cache_summary_off">Scrolling cache disabled</string>
+    <string name="sysprop_bottom_action_bar_title">Bottom action bar</string>
+    <string name="sysprop_bottom_action_bar_summary_on">Bottom action bar enabled</string>
+    <string name="sysprop_bottom_action_bar_summary_off">Bottom action bar disabled</string>
+    <string name="sysprop_bottom_title_bar_title">Bottom title bar</string>
+    <string name="sysprop_bottom_title_bar_summary_on">Bottom title bar enabled</string>
+    <string name="sysprop_bottom_title_bar_summary_off">Bottom title bar disabled</string>
+    <string name="sysprop_status_bar_icon_alpha_title">Status bar icon aplha</string>
+    <string name="sysprop_status_bar_icon_alpha_summary_on">Status bar icon aplha enabled</string>
+    <string name="sysprop_status_bar_icon_alpha_summary_off">Status bar icon aplha disabled</string>
+    <string name="sysprop_change_reboot_message">Settings have been changed. Do you want to reboot now?</string>
+
+    <!-- Multi Boot -->
+    <string name="multi_boot_title">Multi boot setting</string>
+    <string name="multi_boot_rom_select_category">Boot ROM selection</string>
+    <string name="multi_boot_rom_select_title">Boot ROM</string>
+    <string name="multi_boot_rom_setting">ROM setting</string>
+    <string name="rom_system_category">System area</string>
+    <string name="rom_data_category">Data area</string>
+    <string name="rom_kernel_category">Kernel image</string>
+    <string name="rom_partition">Partition</string>
+    <string name="rom_image">Image</string>
+    <string name="rom_kernel_image">Kernel image</string>
+    <string name="rom_path">Path</string>
+    <string name="menu_add_rom">Add ROM</string>
+    <string name="multi_boot_wizard_title">Multi boot wizard</string>
+    <string name="select_img_title">Select image file</string>
+    <string name="select_dir_title">Select directory</string>
+    <string name="rom_label_title">ROM label</string>
+    <string name="rom_label_message">Please input ROM label</string>
+    <string name="path_input_message">Please input path</string>
+
+    <!-- CPU Control -->
+    <string name="cpu_control_title">CPU control</string>
+    <string name="cpu_info_category">SoC info</string>
+    <string name="cpu_governor_category">Governor</string>
+    <string name="cpu_governor_select">Governor select</string>
+    <string name="cpu_governor_setting">Governor setting</string>
+    <string name="cpu_freq_category">Frequency</string>
+    <string name="cpu_max_freq">Max</string>
+    <string name="cpu_min_freq">Min</string>
+    <string name="cpu_max_suspend_freq">Max (In suspend)</string>
+    <string name="cpu_min_suspend_freq">Min (In suspend)</string>
+    <string name="cpu_voltage_category">Voltage</string>
+    <string name="cpu_voltage_title">Voltage control</string>
+    <string name="cpu_asv_group_title">ASV group</string>
+    <string name="cpu_voltage_asv_group_category_title">Voltage table</string>
+    <string name="cpu_voltage_value_category_title">Voltage value</string>
+    <string name="cpu_asv_group_change_message">Are you sure you want the current voltage setting will be reset when you change the ASV group, even if you change the settings?</string>
+    <string name="cpu_info_copy">Do you want to copy SoC information to the clipboard?</string>
+
+    <!-- GPU Control -->
+    <string name="gpu_control_title">GPU control</string>
+    <string name="gpu_high_state_category">High performance state</string>
+    <string name="gpu_low_state_category">Low performance state</string>
+    <string name="gpu_freq_category">Governor</string>
+
+    <!-- Display -->
+    <string name="display_title">Display setting</string>
+    <string name="mdnie_category">mDNie</string>
+    <string name="mdnie_function">mDNie function</string>
+    <string name="mdnie_function_on">mDNie function enabled</string>
+    <string name="mdnie_function_off">mDNie function disabled</string>
+    <string name="mdnie_ctrl_enable">mDNie control</string>
+    <string name="mdnie_ctrl_enable_on">mDNie control enabled</string>
+    <string name="mdnie_ctrl_enable_off">mDNie control disabled</string>
+    <string name="mdnie_ctrl_red">Red</string>
+    <string name="mdnie_ctrl_green">Green</string>
+    <string name="mdnie_ctrl_blue">Blue</string>
+    <string name="mdnie_ctrl_sharpness">Sharpness</string>
+
+    <!-- Sound and Vibration -->
+    <string name="sound_and_vib_title">Sound and Vib setting</string>
+    <string name="sound_category">Sound</string>
+    <string name="hw_volumes">HW Volumes</string>
+    <string name="sound_play_freq_lock_title">CPU freq lock during music play</string>
+    <string name="sound_play_freq_lock_summary_on">CPU freq lock enabled\nNOTICE: Apply from the next play</string>
+    <string name="sound_play_freq_lock_summary_off">CPU freq lock disabled\nNOTICE: Apply from the next play</string>
+    <string name="boot_sound">Boot sound</string>
+    <string name="boot_sound_enabled_title">Boot sound</string>
+    <string name="boot_sound_enabled_on_summary">Boot sound enabled</string>
+    <string name="boot_sound_enabled_off_summary">Boot sound disabled</string>
+    <string name="boot_sound_volume_title">Boot sound volume</string>
+    <string name="boot_sound_note">Please put \'bootsound.mp3\' to \'/system/media/\' To enable the boot sound</string>
+    <string name="vib_category">Vibrator</string>
+    <string name="vib_normal_level">Normal vib level</string>
+    <string name="vib_incoming_level">Incoming vib level</string>
+    <string name="avol_hp_title">(A) Headphone</string>
+    <string name="avol_hp_gain_title">(A) Headphone Gain</string>
+    <string name="avol_rc_title">(A) Receiver Value</string>
+    <string name="avol_sp_title">(A) Speaker Value</string>
+    <string name="dvol_dac_master_title">(D) DAC Master</string>
+    <string name="dvol_dac_att_title">(D) DAC ATT</string>
+    <string name="dvol_dir0_title">(D) DIR0</string>
+    <string name="dvol_dir0_att_title">(D) DIR0 ATT</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Notification setting</string>
+    <string name="notification_led_category">Touchkey</string>
+    <string name="notification_led_timeout_title">Backlight Timeout</string>
+    <string name="notification_led_timeout_summary">How long the touchkey backlight should stay on before turning off</string>
+    <string name="notification_led_fadeout_title">Backlight Fadeout</string>
+    <string name="notification_led_fadeout_summary">Will fade out when turning off the backlight</string>
+    <string name="notification_bln_category">LED Notifications</string>
+    <string name="notification_bln_enabled_title">Notifications</string>
+    <string name="notification_bln_enabled_summary">Enable kernel support for LED Notifications.  Note: An active notification will prevent the phone from entering deep sleep</string>
+    <string name="notification_bln_timeout_title">Notification Timeout</string>
+    <string name="notification_bln_effect_title">Notification Effect</string>
+    <string name="notification_bln_blink_on_interval_title">Blink on interval</string>
+    <string name="notification_bln_blink_off_interval_title">Blink off interval</string>
+    <string name="notification_bln_on_incoming_title">BLN on incoming</string>
+    <string name="notification_bln_on_incoming_summary_on">BLN on incoming enabled</string>
+    <string name="notification_bln_on_incoming_summary_off">BLN on incoming disabled</string>
+
+    <!-- Dock -->
+    <string name="dock_title">Dock setting</string>
+    <string name="dock_emulate">Dock emulate</string>
+    <string name="dock_start">Dock start</string>
+    <string name="dock_emu_hw">HW emulate</string>
+    <string name="dock_emu_sw">SW emulate</string>
+    <string name="dock_emu_disable">Disable</string>
+    <string name="dock_manual">Manual</string>
+    <string name="dock_manual_start">Start dock mode</string>
+    <string name="dock_manual_stop">Stop dock mode</string>
+
+    <!-- About -->
+    <string name="about_title">About TweakGS4</string>
+    <string name="about_check_update_title">Check for update TweakGS4</string>
+    <string name="about_check_update_summary">This is a paid version to accept the donation. Without a donation, it is also possible to use the free version</string>
+    <string name="all_recommend_title">Recommended Settings</string>
+    <string name="all_recommend_summary">Recommended to set the value of all items</string>
+    <string name="all_reset_title">Reset Settings</string>
+    <string name="all_reset_summary">Initialize the set of all items</string>
+    <string name="reboot_reflect_comfirm">Do you want to reboot now reflect the settings?</string>
+
+    <!-- Menu -->
+    <string name="menu_reset">Reset</string>
+    <string name="menu_recommend">Recommend</string>
+
+</resources>

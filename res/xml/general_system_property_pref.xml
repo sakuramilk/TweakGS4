@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2011-2012 sakuramilk <c.sakuramilk@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/system_property_title">
+    
+    <CheckBoxPreference
+        android:key="sysprop_boot_sound"  
+        android:title="@string/sysprop_boot_sound_title"
+        android:summaryOn="@string/sysprop_boot_sound_summary_on"
+        android:summaryOff="@string/sysprop_boot_sound_summary_off" />
+    <CheckBoxPreference   
+        android:key="sysprop_camera_sound"
+        android:title="@string/sysprop_camera_sound_title"
+        android:summaryOn="@string/sysprop_camera_sound_summary_on"
+        android:summaryOff="@string/sysprop_camera_sound_summary_off" />
+    <net.sakuramilk.widget.SeekBarPreference
+        android:key="sysprop_lcd_density"
+        android:title="@string/sysprop_lcd_density_title"
+        android:dialogTitle="@string/sysprop_lcd_density_title" />
+    <CheckBoxPreference   
+        android:key="sysprop_crt_effect"
+        android:title="@string/sysprop_crt_effect_title"
+        android:summaryOn="@string/sysprop_crt_effect_summary_on"
+        android:summaryOff="@string/sysprop_crt_effect_summary_off" />
+    <!--
+    <CheckBoxPreference
+        android:key="sysprop_android_logger"
+        android:title="@string/sysprop_android_logger_title"
+        android:summaryOn="@string/sysprop_android_logger_summary_on"
+        android:summaryOff="@string/sysprop_android_logger_summary_off" />
+    <CheckBoxPreference
+        android:key="sysprop_cifs"
+        android:title="@string/sysprop_cifs_title"
+        android:summaryOn="@string/sysprop_cifs_summary_on"
+        android:summaryOff="@string/sysprop_cifs_summary_off" />
+    <CheckBoxPreference
+        android:key="sysprop_ntfs"
+        android:title="@string/sysprop_ntfs_title"
+        android:summaryOn="@string/sysprop_ntfs_summary_on"
+        android:summaryOff="@string/sysprop_ntfs_summary_off" />
+    -->
+    <ListPreference
+        android:key="sysprop_usb_config"
+        android:title="@string/sysprop_usb_config_title"
+        android:entries="@array/sysprop_usb_config_entries"
+        android:entryValues="@array/sysprop_usb_config_values" />
+    <CheckBoxPreference
+        android:key="sysprop_switch_external"
+        android:title="@string/sysprop_switch_external_title"
+        android:summaryOn="@string/sysprop_switch_external_summary_on"
+        android:summaryOff="@string/sysprop_switch_external_summary_off" />
+    <net.sakuramilk.widget.SeekBarPreference
+        android:key="sysprop_music_volume_steps"
+        android:title="@string/sysprop_music_volume_steps_title"
+        android:dialogTitle="@string/sysprop_music_volume_steps_title" />
+    <CheckBoxPreference
+        android:key="sysprop_show_navigation_bar"
+        android:title="@string/sysprop_show_navigation_bar_title"
+        android:summaryOn="@string/sysprop_show_navigation_bar_summary_on"
+        android:summaryOff="@string/sysprop_show_navigation_bar_summary_off" />
+    <CheckBoxPreference
+        android:key="sysprop_scrolling_cache"
+        android:title="@string/sysprop_scrolling_cache_title"
+        android:summaryOn="@string/sysprop_scrolling_cache_summary_on"
+        android:summaryOff="@string/sysprop_scrolling_cache_summary_off" />
+    <CheckBoxPreference
+        android:key="sysprop_bottom_action_bar"
+        android:title="@string/sysprop_bottom_action_bar_title"
+        android:summaryOn="@string/sysprop_bottom_action_bar_summary_on"
+        android:summaryOff="@string/sysprop_bottom_action_bar_summary_off" />
+    <CheckBoxPreference
+        android:key="sysprop_bottom_title_bar"
+        android:title="@string/sysprop_bottom_title_bar_title"
+        android:summaryOn="@string/sysprop_bottom_title_bar_summary_on"
+        android:summaryOff="@string/sysprop_bottom_title_bar_summary_off" />
+    <CheckBoxPreference
+        android:key="sysprop_status_bar_icon_alpha"
+        android:title="@string/sysprop_status_bar_icon_alpha_title"
+        android:summaryOn="@string/sysprop_status_bar_icon_alpha_summary_on"
+        android:summaryOff="@string/sysprop_status_bar_icon_alpha_summary_off" />
+</PreferenceScreen>

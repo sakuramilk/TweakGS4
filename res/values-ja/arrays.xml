@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2011-2012 sakuramilk <c.sakuramilk@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+
+    <string-array name="sdcard_entries">
+        <item>内部SDカード</item>
+        <item>外部SDカード</item>
+    </string-array>
+
+    <string-array name="lcdcolor_mode_entries">
+        <item>無効</item>
+        <item>PCC</item>
+        <item>MCM</item>
+        <item>PCC and MCM</item>
+    </string-array>
+
+    <string-array name="dock_emulate_entries">
+        <item>無効</item>
+        <item>SWエミュレーション</item>
+    </string-array>
+
+    <string-array name="dock_emulate_hw_entries">
+        <item>無効</item>
+        <item>SWエミュレーション</item>
+        <item>HWエミュレーション</item>
+    </string-array>
+
+    <string-array name="rom_setting_menu_entries">
+        <item>変更</item>
+        <item>削除</item>
+    </string-array>
+
+    <string-array name="rom_img_menu_entries">
+        <item>変更</item>
+        <item>作成</item>
+        <item>削除</item>
+    </string-array>
+
+    <string-array name="notification_led_timeout_entries">
+        <item>常にON</item>
+        <item>2秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+        <item>15秒</item>
+        <item>常にOFF</item>
+    </string-array>
+
+    <string-array name="notification_bln_timeout_entries">
+        <item>タイムアウトなし</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+        <item>30分</item>
+        <item>60分</item>
+    </string-array>
+
+    <string-array name="notification_bln_effect_entries">
+        <item>エフェクトなし</item>
+        <item>点滅エフェクト</item>
+        <item>呼吸エフェクト</item>
+    </string-array>
+
+    <string-array name="notification_bln_blink_interval_entries">
+        <item>0.5秒</item>
+        <item>1秒</item>
+        <item>2秒</item>
+        <item>3秒</item>
+        <item>4秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+    </string-array>
+
+</resources>

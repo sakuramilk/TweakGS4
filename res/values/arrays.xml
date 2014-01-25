@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2011-2012 sakuramilk <c.sakuramilk@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+
+    <string-array name="sdcard_entries">
+        <item>Internal sdcard</item>
+        <item>External sdcard</item>
+    </string-array>
+
+    <string-array name="sdcard_values" translatable="false">
+        <item>internal</item>
+        <item>external</item>
+    </string-array>
+
+    <string-array name="ldctype_entries">
+        <item>SM2 (A1 line)</item>
+        <item>M2</item>
+        <item>SM2 (A2 line)</item>
+    </string-array>
+
+    <string-array name="lcdtype_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="lcdcolor_mode_entries">
+        <item>Disable</item>
+        <item>PCC</item>
+        <item>MCM</item>
+        <item>PCC and MCM</item>
+    </string-array>
+
+    <string-array name="lcdcolor_mode_values" translatable="false">
+        <item>0</item>
+        <item>65</item>
+        <item>6</item>
+        <item>69</item>
+    </string-array>
+
+    <string-array name="dock_emulate_entries">
+        <item>Disable</item>
+        <item>SW emulation</item>
+    </string-array>
+
+    <string-array name="dock_emulate_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="dock_emulate_hw_entries">
+        <item>Disable</item>
+        <item>SW emulation</item>
+        <item>HW emulation</item>
+    </string-array>
+
+    <string-array name="dock_emulate_hw_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="system_image_size_entries" translatable="false">
+        <item>200M</item>
+        <item>300M</item>
+        <item>400M</item>
+        <item>512M</item>
+        <item>612M</item>
+    </string-array>
+
+    <string-array name="system_image_size_values" translatable="false">
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>512</item>
+        <item>612</item>
+    </string-array>
+
+    <string-array name="data_image_size_entries" translatable="false">
+        <item>100M</item>
+        <item>200M</item>
+        <item>300M</item>
+        <item>400M</item>
+        <item>500M</item>
+        <item>600M</item>
+        <item>700M</item>
+        <item>800M</item>
+        <item>900M</item>
+        <item>1024M</item>
+    </string-array>
+
+    <string-array name="data_image_size_values" translatable="false">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1024</item>
+    </string-array>
+
+    <string-array name="rom_setting_menu_entries">
+        <item>Modify</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="rom_setting_menu_values" translatable="false">
+        <item>modify</item>
+        <item>delete</item>
+    </string-array>
+
+    <string-array name="rom_img_menu_entries">
+        <item>Modify</item>
+        <item>Create</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="rom_img_menu_values" translatable="false">
+        <item>modify</item>
+        <item>create</item>
+        <item>delete</item>
+    </string-array>
+
+    <string-array name="rom_kernel_img_menu_entries">
+        <item>Modify</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="rom_kernel_img_menu_values" translatable="false">
+        <item>modify</item>
+        <item>delete</item>
+    </string-array>
+
+    <string-array name="sysprop_usb_config_entries">
+        <item>MTP</item>
+        <item>MTP and ADB</item>
+        <item>PTP</item>
+        <item>PTP and ADB</item>
+        <item>UMS</item>
+        <item>UMS and ADB</item>
+    </string-array>
+
+    <string-array name="sysprop_usb_config_values" translatable="false">
+        <item>mtp</item>
+        <item>mtp,adb</item>
+        <item>ptp</item>
+        <item>ptp,adb</item>
+        <item>mass_storage</item>
+        <item>mass_storage,adb</item>
+    </string-array>
+
+    <string-array name="asv_group_entries">
+        <item>SS</item>
+        <item>A1</item>
+        <item>A2</item>
+        <item>B1</item>
+        <item>B2</item>
+        <item>C1</item>
+        <item>C2</item>
+        <item>D</item>
+    </string-array>
+
+    <string-array name="asv_group_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="dualboot_rom_select_entries">
+        <item>Primary</item>
+        <item>Secondary</item>
+    </string-array>
+
+    <string-array name="dualboot_rom_select_values" translatable="false">
+        <item>primary</item>
+        <item>secondary</item>
+    </string-array>
+
+    <string-array name="notification_led_timeout_entries">
+        <item>Always On</item>
+        <item>2 seconds</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>15 seconds</item>
+        <item>Always Off</item>
+    </string-array>
+
+    <string-array name="notification_led_timeout_values" translatable="false">
+        <item>-1</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>-2</item>
+    </string-array>
+
+    <string-array name="notification_bln_timeout_entries">
+        <item>Never</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+
+    <string-array name="notification_bln_timeout_values" translatable="false">
+        <item>-1</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+    </string-array>
+
+    <string-array name="notification_bln_effect_entries">
+        <item>None</item>
+        <item>Blinking</item>
+        <item>Breathing</item>
+    </string-array>
+
+    <string-array name="notification_bln_effect_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="notification_bln_blink_interval_entries">
+        <item>500 msec</item>
+        <item>1 sec</item>
+        <item>2 sec</item>
+        <item>3 sec</item>
+        <item>4 sec</item>
+        <item>5 sec</item>
+        <item>10 sec</item>
+    </string-array>
+
+    <string-array name="notification_bln_blink_interval_values" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+
+    <string-array name="boot_sound_volume_entries" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="boot_sound_volume_values" translatable="false">
+        <item>0.1</item>
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.5</item>
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1.0</item>
+    </string-array>
+
+</resources>
