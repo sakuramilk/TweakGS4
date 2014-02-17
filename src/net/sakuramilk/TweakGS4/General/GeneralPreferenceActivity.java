@@ -70,7 +70,7 @@ public class GeneralPreferenceActivity extends PreferenceActivity implements OnP
         	mReplaceKey.setOnPreferenceChangeListener(this);
         }
 
-        File felicaFile = new File(Misc.getSdcardPath(true) + Config.KBC_DATA_DIR + "/felica_key");
+        File felicaFile = new File(Misc.getSdcardPath(true, false) + Config.KBC_DATA_DIR + "/felica_key");
         String curFelicaKey = "";
         if (felicaFile.exists()) {
         	try {
@@ -86,7 +86,7 @@ public class GeneralPreferenceActivity extends PreferenceActivity implements OnP
         if ("".equals(curFelicaKey)) {
         	mFelicaKey.setSummary(getText(R.string.felica_key_current_value) + " : ");
         } else {
-        	mFelicaKey.setSummary(getText(R.string.felica_key_current_value) + " : " + curFelicaKey.substring(10) + "...");
+        	mFelicaKey.setSummary(getText(R.string.felica_key_current_value) + " : " + curFelicaKey.substring(0, 20) + "...");
         }
     }
 
@@ -132,13 +132,16 @@ public class GeneralPreferenceActivity extends PreferenceActivity implements OnP
 			if (felicaKey == null || "".equals(felicaKey)){
 	            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 	            alertDialogBuilder.setTitle(android.R.string.dialog_alert_title);
-	            alertDialogBuilder.setMessage(R.string.error_get_felica_key);
+	            alertDialogBuilder.setMessage(getString(R.string.error_get_felica_key) + "\ncode=1");
 	            alertDialogBuilder.setPositiveButton(android.R.string.ok, null);
 	            alertDialogBuilder.show();
 	            return false;
 			}
 
-			File felicaFile = new File(Misc.getSdcardPath(true) + Config.KBC_DATA_DIR + "/felica_key");
+			File felicaDir = new File(Misc.getSdcardPath(true, false) + Config.KBC_DATA_DIR);
+			felicaDir.mkdirs();
+
+			File felicaFile = new File(Misc.getSdcardPath(true, false) + Config.KBC_DATA_DIR + "/felica_key");
 			PrintWriter pw;
 			try {
 				pw = new PrintWriter(new BufferedWriter(new FileWriter(felicaFile)));
@@ -146,6 +149,11 @@ public class GeneralPreferenceActivity extends PreferenceActivity implements OnP
 				pw.close();
 			} catch (IOException e) {
 				e.printStackTrace();
+				final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+	            alertDialogBuilder.setTitle(R.string.app_name);
+	            alertDialogBuilder.setMessage(getString(R.string.error_get_felica_key) + "\ncode=2");
+	            alertDialogBuilder.setPositiveButton(android.R.string.ok, null);
+	            alertDialogBuilder.show();
 				return false;
 			}
 

@@ -76,10 +76,10 @@
             android:key="partition_backup"
             android:title="@string/partition_backup_title"
             android:summary="@string/partition_backup_summary" />
-        <PreferenceScreen
-            android:key="time_adjust"
-            android:title="@string/time_adjust_title"
-            android:summary="@string/time_adjust_summary" />
+<!--         <PreferenceScreen -->
+<!--             android:key="time_adjust" -->
+<!--             android:title="@string/time_adjust_title" -->
+<!--             android:summary="@string/time_adjust_summary" /> -->
         <PreferenceScreen
             android:key="temp_unroot"
             android:title="@string/temp_unroot_title"

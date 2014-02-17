@@ -42,7 +42,7 @@ public class ZipFilePickerActivity extends FilePickerActivity {
             public void onClick(DialogInterface dialog, int which) {
             	String filePath = file.getPath();
             	filePath = filePath.replace("\n", "").trim();
-                filePath = filePath.replace(Misc.getSdcardPath(false), "/emmc");
+                filePath = filePath.replace(Misc.getSdcardPath(false, true), "/emmc");
                 SystemCommand.install_zip(filePath);
                 SystemCommand.reboot("recovery");
                 //activity.finish();

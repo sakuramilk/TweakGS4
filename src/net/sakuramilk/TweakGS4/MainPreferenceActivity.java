@@ -76,7 +76,7 @@ public class MainPreferenceActivity extends PreferenceActivity {
 
         if (Misc.isSuperUserEnabled()) {
 	        // auto backup
-	        String backupDir = Misc.getSdcardPath(true) + Config.BACKUP_DIR;
+	        String backupDir = Misc.getSdcardPath(true, false) + Config.BACKUP_DIR;
 	        File file = new File(backupDir);
 	        if (!file.exists()) {
 	            PowerManager pm = (PowerManager)getSystemService(Context.POWER_SERVICE);

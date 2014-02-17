@@ -36,7 +36,7 @@
     <PreferenceScreen
         android:title="@string/rom_manager_title"
         android:icon="@drawable/ic_settings_cmdevice"
-        android:enabled="false">
+        android:enabled="true">
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="net.sakuramilk.TweakGS4"

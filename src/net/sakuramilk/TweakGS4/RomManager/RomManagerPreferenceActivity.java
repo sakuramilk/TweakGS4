@@ -52,7 +52,7 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
     private ListPreference mNandroidManage;
     private PreferenceScreen mFlashInstallZip;
     private PreferenceScreen mPartitionBackup;
-    private PreferenceScreen mTimeAdjust;
+    //private PreferenceScreen mTimeAdjust;
     private PreferenceScreen mTempUnroot;
     private Context mContext;
 
@@ -83,8 +83,8 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
         mPartitionBackup = (PreferenceScreen)findPreference("partition_backup");
         mPartitionBackup.setOnPreferenceClickListener(this);
 
-        mTimeAdjust = (PreferenceScreen)findPreference("time_adjust");
-        mTimeAdjust.setOnPreferenceClickListener(this);
+//        mTimeAdjust = (PreferenceScreen)findPreference("time_adjust");
+//        mTimeAdjust.setOnPreferenceClickListener(this);
         
         mTempUnroot = (PreferenceScreen)findPreference("temp_unroot");
         if (Misc.isSuperUserEnabled()) {
@@ -151,7 +151,7 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
             dlg.setMessage(getText(R.string.partitiion_backup_progress));
             dlg.show();
 
-            String backupDir = Misc.getSdcardPath(true) + Config.BACKUP_DIR;
+            String backupDir = Misc.getSdcardPath(true, true) + Config.BACKUP_DIR;
             final String backupPath = backupDir + "/" + Misc.getDateString();
             
             final Handler handler = new Handler() {
@@ -172,17 +172,17 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
             });
             thread.start();
 
-        } else if (preference == mTimeAdjust) {
-            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setTitle(R.string.reboot);
-            alertDialogBuilder.setMessage(R.string.recovery_summary);
-            alertDialogBuilder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                    SystemCommand.time_adjust_recovery();
-                }
-            });
-            alertDialogBuilder.setNegativeButton(android.R.string.no, null);
-            alertDialogBuilder.create().show();
+//        } else if (preference == mTimeAdjust) {
+//            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+//            alertDialogBuilder.setTitle(R.string.reboot);
+//            alertDialogBuilder.setMessage(R.string.recovery_summary);
+//            alertDialogBuilder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//                public void onClick(DialogInterface dialog, int which) {
+//                    SystemCommand.time_adjust_recovery();
+//                }
+//            });
+//            alertDialogBuilder.setNegativeButton(android.R.string.no, null);
+//            alertDialogBuilder.create().show();
         } else if (preference == mTempUnroot) {
             if (Misc.isSuperUserEnabled()) {
                 Misc.doTempUnroot();
@@ -202,14 +202,14 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mNandroidBackup) {
-            final String sdcardPath = Misc.getSdcardPath("internal".equals(newValue));
+            final String sdcardPath = Misc.getSdcardPath("internal".equals(newValue), true);
             TextInputDialog dlg = new TextInputDialog(this);
             dlg.setFinishTextInputListener(new TextInputDialog.FinishTextInputListener() {
                 @Override
                 public void onFinishTextInput(CharSequence input) {
                     String inputName = input.toString();
                     inputName = inputName.replace("\n", "").trim();
-                    String sdPath = sdcardPath.replace(Misc.getSdcardPath(false), "/emmc");
+                    String sdPath = sdcardPath.replace(Misc.getSdcardPath(false, true), "/emmc");
                     SystemCommand.backup_rom(sdPath + Constant.CWM_BACKUP_DIR +  "/" + inputName);
                     SystemCommand.reboot("recovery");
                 }
@@ -217,7 +217,7 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
             dlg.show(R.string.backup, R.string.backup_name, Misc.getDateString());
 
         } else if (preference == mNandroidRestore) {
-            final String sdcardPath = Misc.getSdcardPath("internal".equals(newValue));
+            final String sdcardPath = Misc.getSdcardPath("internal".equals(newValue), true);
             Intent intent = new Intent(getApplicationContext(), RestoreDirPickerActivity.class);
             intent.putExtra("title", getText(R.string.select_backup_title));
             intent.putExtra("select", "dir");
@@ -226,7 +226,7 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
             this.startActivity(intent);
 
         } else if (preference == mNandroidManage) {
-            final String sdcardPath = Misc.getSdcardPath("internal".equals(newValue));
+            final String sdcardPath = Misc.getSdcardPath("internal".equals(newValue), true);
             Intent intent = new Intent(getApplicationContext(), RestoreDirPickerActivity.class);
             intent.putExtra("title", getText(R.string.select_backup_title));
             intent.putExtra("select", "dir");
